@@ -92,10 +92,6 @@ section{
   box-shadow: 0 8px 12px 0 rgba(0,0,0,.125);
 }
 
-.project:hover{
-  border: 2px solid rgba(0,0,0,.25);
-}
-
 .icon{
   width: 4rem;
   border-radius: .5rem;
@@ -103,16 +99,13 @@ section{
 
 /* Links and Buttons */
 a{
+  text-decoration: none;
   color: inherit;
-  text-decoration: underline;
-  text-decoration-color: transparent;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
 }
 
 a:hover{
-  text-decoration: underline;
-  text-decoration-color: inherit;
   transition: all 0.1s ease-in;
   -webkit-transition: all 0.1s ease-in;
 }
@@ -121,14 +114,60 @@ a:hover{
   font-weight: 700;
 }
 
+.btn{
+  display: block;
+  width: 100%;
+  padding: .875rem;
+  text-align: center;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover{
+  opacity: .5;
+}
+
+.btn.primary{
+  background: black;
+  color: white;
+}
+
+.btn.secondary{
+  background: gray;
+}
+
+.fas{
+  font-size: .875rem;
+  opacity: .5;
+  margin-left: 8px;
+}
+
+/* About */
+.bio{
+}
+
+.portrait{
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.portrait img{
+  width: 100%;
+}
+
+.caption{
+  font-style: italic;
+}
 
 /* Typography */
-h1, h2, h3{
+h1, h2{
   line-height: 1.2;
   margin: 2rem 0;
 }
 
-h4, h5, h6{
+h3, h4, h5, h6{
   line-height: 1;
   margin: 1rem 0;
 }
@@ -144,6 +183,7 @@ h2{
 
 h3{
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h4{
@@ -163,7 +203,7 @@ h6{
 }
 
 p{
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
@@ -173,8 +213,9 @@ p{
     grid-template-columns: auto auto;
     justify-content: space-between;
   }
-  .grid{
+  .three, .two{
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
@@ -182,7 +223,7 @@ p{
   .container{
     max-width: 960px;
   }
-  .grid{
+  .three{
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
