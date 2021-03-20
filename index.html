@@ -3,27 +3,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Home | Matt Castillo Engineering Portfolio</title>
   <meta name="description" content="Engineering portfolio of Matt Castillo.">
   <meta name="author" content="Matt Castillo">
-
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
   <header>
-    <h1><a href="#">Home</a></h1>
-    <h3><a href="#">About</a></h3>
-    <h3><a href="#">Experience</a></h3>
+    <div class="container"> 
+      <a class="title" href="#">Matt Castillo</a>
+      <div class="right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
   </header>
   
   <main>
-    <section id="hero"></section>
-    <section id="projects"></section>
+    <div class="container">
+      <section id="hero">
+        <h1>Matt Castillo is a designer and developer.</h1>
+      </section>
+      <section id="projects">
+        <h2>Recent Projects</h2>
+        <div class="grid">
+          <a href="/" class="project">
+            <img class="icon" src="/assets/icons/fi-forecast.png" />
+            <h4>FI Forecast</h4>
+            <h6>Feb-Mar 2021</h6>
+            <p>Helping everyday investors find out when they may reach financial independence.</p>
+          </a>
+          <a href="/" class="project">
+            <img class="icon" src="/assets/icons/swatch-ui.png" />
+            <h4>swatch-ui</h4>
+            <h6>Jan-Feb 2021</h6>
+            <p>Rapidly experiment with styling to generate quick swatches of your UI's look-and-feel.</p>
+          </a>
+          <a href="/" class="project">
+            <img class="icon" src="/assets/icons/bon-api-etit.png" />
+            <h4>Bon API-etit</h4>
+            <h6>Dec 2020</h6>
+            <p>Search for recipes based on keyword and dietary restrictions, then save them as PDFs!</p>
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
-
+  <footer>
+    <div class="container">
+      <a class="title" href="#">Matt Castillo</a>
+      <div class="right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>© <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+  </footer>
 
   <script src="js/scripts.js"></script>
 </body>
