@@ -23,12 +23,12 @@ header{
   height: auto;
   padding: 1rem 0;
   width: 100%;
+  margin: 0 auto;
 }
 
 .content{
   margin: 24px auto;
   width: 100vw;
-  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -341,7 +341,9 @@ p{
 
 @media screen and (min-width: 1024px){
   body{
-    grid-template-columns: 1fr 3fr;
+    width: 100vw;
+    max-width: 1024px;
+    grid-template-columns: 288px minmax(auto, 736px);
   }
   header .container{
     position: fixed;
